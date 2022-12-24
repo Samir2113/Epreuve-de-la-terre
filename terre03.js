@@ -1,6 +1,12 @@
 const abc = "abcdefghijklmnopqrstuvwxyz";
-let letter = process.argv[2].toLowerCase();
+const letter = process.argv[2].toLowerCase();
 
 let indexLetter = abc.indexOf(letter);
+let newAbc = abc.charAt(indexLetter);
 
-console.log(abc.substring(indexLetter));
+for(i = indexLetter + 1; i < abc.length; i++){
+     
+    newAbc += abc.charAt(i);
+}
+
+console.log(newAbc);
