@@ -2,14 +2,14 @@ const abc = "abcdefghijklmnopqrstuvwxyz";
 
 // Verify if input is a letter:
 
-if(process.argv[2] && isNaN(process.argv[2])){
+if(abc.indexOf(process.argv[2].toLowerCase()) != -1){
     
     const inputLetter = process.argv[2].toLowerCase();
-    let indexLetter = abc.indexOf(inputLetter);
-    let newString = abc.charAt(indexLetter);
+    const indexLetter = abc.indexOf(inputLetter);
+    let newString = "";
 
-    for(i = indexLetter + 1; i < abc.length; i++){    
-        newAbc += abc.charAt(i);
+    for(i = indexLetter; i < abc.length; i++){    
+        newString += abc.charAt(i);
     }
 
     console.log(newString);
