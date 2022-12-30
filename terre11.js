@@ -29,14 +29,14 @@ if(input.length == 5 && colon == ":"){
                     counter++;
                 }
             }else{
-                console.log("Erreur! Format de l'heure incorecte.");
+                console.log("Erreur! Format de l'heure incorrect.");
             }
         }else{
-            console.log("Erreur! Format de l'heure incorecte.");
+            console.log("Erreur! Format de l'heure incorrect.");
         }
     }else{
-        console.log("Erreur! Format de l'heure incorecte.");
+        console.log("Erreur! Format de l'heure incorrect.");
     }
 }else{
-    console.log("Erreur! Format de l'heure incorecte.");
+    console.log("Erreur! Format de l'heure incorrect.");
 }
